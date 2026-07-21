@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sneha Kumari - Full Stack Web Developer Portfolio">
+    <title>Sneha Kumari – Full Stack Web Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button id="scrollToTop" aria-label="Scroll to top"><i class="ph ph-caret-up"></i></button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Sneha<span>.dev</span></a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button id="themeToggle" aria-label="Toggle Dark Mode">
+                    <i class="ph ph-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section-reveal">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Sneha Kumari</span></h1>
+            <h2 class="subtitle">Passionate Full Stack Web Developer</h2>
+            <div class="typing-container">
+                <span class="typing-text"></span><span class="cursor">&nbsp;</span>
+            </div>
+            <p class="intro-text">
+                I am a passionate web developer who enjoys building responsive, user-friendly, and modern web applications. I continuously learn new technologies, solve real-world problems, and create high-quality digital experiences.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- Using an abstract placeholder or an illustration -->
+            <div class="illustration-container">
+                <img src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?t=st=1708890918~exp=1708894518~hmac=6ed7f7632616f7be8c8928db861d8b9d628dd17724a3e74ebf4ff0f09a89c891&w=740" alt="Web Developer Illustration">
+                <div class="floating-icon icon-1"><i class="ph-fill ph-code"></i></div>
+                <div class="floating-icon icon-2"><i class="ph-fill ph-database"></i></div>
+                <div class="floating-icon icon-3"><i class="ph-fill ph-paint-brush"></i></div>
+            </div>
+        </div>
+        <!-- Background shapes -->
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-reveal">
+        <div class="section-title">
+            <h2>About <span class="highlight">Me</span></h2>
+        </div>
+        <div class="about-container glass-card">
+            <p>I am an enthusiastic Full Stack Web Developer with a strong interest in creating responsive and visually appealing websites. I enjoy learning new technologies, solving technical challenges, and continuously improving my development skills. My goal is to contribute to innovative projects while growing as a software professional.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-reveal">
+        <div class="section-title">
+            <h2>My <span class="highlight">Skills</span></h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category glass-card">
+                <h3><i class="ph ph-layout"></i> Frontend</h3>
+                <ul class="skill-list">
+                    <li><span>HTML5</span> <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div></li>
+                    <li><span>CSS3</span> <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div></li>
+                    <li><span>JavaScript</span> <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div></li>
+                    <li><span>Bootstrap</span> <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div></li>
+                    <li><span>React.js</span> <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div></li>
+                </ul>
+            </div>
+            
+            <div class="skill-category glass-card">
+                <h3><i class="ph ph-server"></i> Backend</h3>
+                <ul class="skill-list">
+                    <li><span>Node.js</span> <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div></li>
+                    <li><span>Express.js</span> <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div></li>
+                    <li><span>REST API</span> <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div></li>
+                </ul>
+            </div>
+
+            <div class="skill-category glass-card">
+                <h3><i class="ph ph-database"></i> Database</h3>
+                <ul class="skill-list">
+                    <li><span>MongoDB</span> <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div></li>
+                    <li><span>MySQL</span> <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div></li>
+                </ul>
+            </div>
+
+            <div class="skill-category glass-card">
+                <h3><i class="ph ph-wrench"></i> Tools</h3>
+                <ul class="skill-list">
+                    <li><span>Git</span> <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div></li>
+                    <li><span>GitHub</span> <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div></li>
+                    <li><span>VS Code</span> <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div></li>
+                </ul>
+            </div>
+
+            <div class="skill-category glass-card" style="grid-column: 1 / -1;">
+                <h3><i class="ph ph-users"></i> Soft Skills</h3>
+                <div class="soft-skills-tags">
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">Teamwork</span>
+                    <span class="tag">Communication</span>
+                    <span class="tag">Quick Learner</span>
+                    <span class="tag">Time Management</span>
+                    <span class="tag">Attention to Detail</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-reveal">
+        <div class="section-title">
+            <h2>Recent <span class="highlight">Projects</span></h2>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card glass-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?q=80&w=2070&auto=format&fit=crop" alt="Countdown Timer Shopify App">
+                </div>
+                <div class="project-info">
+                    <h3>Countdown Timer Shopify App</h3>
+                    <p>A responsive Shopify application that allows merchants to display customizable countdown timers to increase urgency and boost sales.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Shopify</span><span>React</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/krisnehakri-alt/countdown-timer" target="_blank" class="btn btn-sm btn-primary">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card glass-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1981&auto=format&fit=crop" alt="Food Delivery Website">
+                </div>
+                <div class="project-info">
+                    <h3>Food Delivery Website</h3>
+                    <p>A modern responsive restaurant landing page with attractive UI, food categories, offers, and responsive design.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/krisnehakri-alt/foodie-deals-hub-06" target="_blank" class="btn btn-sm btn-primary">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card glass-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1974&auto=format&fit=crop" alt="Recharge Coupon Website">
+                </div>
+                <div class="project-info">
+                    <h3>Recharge Coupon Website</h3>
+                    <p>A responsive coupon website with clean design, coupon listings, categories, and mobile-friendly layout.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/krisnehakri-alt/rechagecoupon-website" target="_blank" class="btn btn-sm btn-primary">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hire Me & Learning Approach & Services & Achievements -->
+    <section class="mixed-section section-reveal">
+        <div class="features-grid">
+            
+            <div class="feature-col why-hire glass-card">
+                <h3>Why Hire Me</h3>
+                <ul class="feature-list">
+                    <li><i class="ph ph-check-circle"></i> Passionate Learner</li>
+                    <li><i class="ph ph-check-circle"></i> Creative Thinker</li>
+                    <li><i class="ph ph-check-circle"></i> Clean Code</li>
+                    <li><i class="ph ph-check-circle"></i> Responsive Design</li>
+                    <li><i class="ph ph-check-circle"></i> Problem Solver</li>
+                    <li><i class="ph ph-check-circle"></i> Team Player</li>
+                    <li><i class="ph ph-check-circle"></i> Professional Attitude</li>
+                    <li><i class="ph ph-check-circle"></i> Fast Learner</li>
+                </ul>
+            </div>
+
+            <div class="feature-col learning-approach glass-card" id="learning">
+                <h3>How I Learn New Technologies</h3>
+                <p>I believe continuous learning is the key to becoming a successful developer. Whenever I learn a new technology, I first study its official documentation and understand the core concepts. Then I practice by building small projects, solving real-world problems, exploring best practices, and improving my skills through hands-on experience. I enjoy experimenting with new tools and continuously upgrading my technical knowledge.</p>
+            </div>
+
+            <div class="feature-col services glass-card" id="services">
+                <h3>Services</h3>
+                <div class="services-list">
+                    <div class="service-item"><i class="ph ph-browser"></i> Frontend Development</div>
+                    <div class="service-item"><i class="ph ph-hard-drives"></i> Backend Development</div>
+                    <div class="service-item"><i class="ph ph-stack"></i> Full Stack Development</div>
+                    <div class="service-item"><i class="ph ph-devices"></i> Responsive Website Design</div>
+                    <div class="service-item"><i class="ph ph-plugs-connected"></i> API Integration</div>
+                    <div class="service-item"><i class="ph ph-wrench"></i> Website Maintenance</div>
+                </div>
+            </div>
+
+            <div class="feature-col achievements glass-card">
+                <h3>Achievements</h3>
+                <ul class="feature-list">
+                    <li><i class="ph ph-star"></i> Responsive Website Development</li>
+                    <li><i class="ph ph-star"></i> Modern UI Design</li>
+                    <li><i class="ph ph-star"></i> Web Application Projects</li>
+                    <li><i class="ph ph-star"></i> Problem Solving</li>
+                    <li><i class="ph ph-star"></i> Continuous Learning</li>
+                    <li><i class="ph ph-star"></i> Clean Coding Practices</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-reveal">
+        <div class="section-title">
+            <h2>Get In <span class="highlight">Touch</span></h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info glass-card">
+                <h3>Contact Information</h3>
+                <p>Feel free to reach out to me for any opportunities or collaborations.</p>
+                <div class="info-items">
+                    <div class="info-item">
+                        <div class="icon-circle"><i class="ph ph-user"></i></div>
+                        <div>
+                            <h4>Name</h4>
+                            <p>Sneha Kumari</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-circle"><i class="ph ph-briefcase"></i></div>
+                        <div>
+                            <h4>Role</h4>
+                            <p>Full Stack Web Developer</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-circle"><i class="ph ph-phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+918102064727">+91 8102064727</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links-contact">
+                    <a href="https://github.com/krisnehakri-alt" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a>
+                    <a href="https://www.linkedin.com/in/sneha-kumari-41a453383?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form glass-card">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message <i class="ph ph-paper-plane-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Sneha<span>.dev</span></h3>
+                <p>Building responsive, user-friendly, and modern web applications.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Me</h4>
+                <div class="social-icons">
+                    <a href="https://github.com/krisnehakri-alt" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a>
+                    <a href="https://www.linkedin.com/in/sneha-kumari-41a453383?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sneha Kumari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
