@@ -362,6 +362,29 @@ section {
     50% { transform: translateY(-15px); }
 }
 
+/* Profile Photo Styles */
+.profile-container {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 12px;
+    box-shadow: 0 0 35px rgba(79, 70, 229, 0.4), var(--glass-shadow);
+    transition: var(--transition);
+}
+[data-theme="dark"] .profile-container {
+    box-shadow: 0 0 45px rgba(168, 85, 247, 0.3), var(--glass-shadow);
+}
+.profile-container:hover {
+    box-shadow: 0 0 50px rgba(79, 70, 229, 0.6), 0 12px 40px 0 rgba(31, 38, 135, 0.15);
+    transform: translateY(-5px);
+}
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    object-fit: contain;
+}
+
 /* Background Shapes */
 .shape {
     position: absolute;
