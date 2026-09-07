@@ -205,6 +205,17 @@ img { max-width: 100%; display: block; }
     color: var(--text-color);
 }
 .logo span { color: var(--primary-color); }
+.logo-img {
+    height: 45px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+    transition: var(--transition);
+}
+.logo-img:hover {
+    opacity: 0.85;
+    transform: scale(1.03);
+}
 
 .nav-links {
     display: flex;
@@ -732,6 +743,13 @@ section {
     margin-bottom: 1rem;
 }
 .footer-brand span { color: var(--primary-color); }
+.footer-logo-img {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    display: block;
+}
 .footer-brand p {
     color: var(--text-light);
     max-width: 300px;
