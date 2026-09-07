@@ -417,12 +417,31 @@ section {
 }
 
 /* Profile Photo Styles */
+
+/* ── Entrance animation keyframe ── */
+@keyframes profileReveal {
+    from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.96);
+        box-shadow: 0 0 0px rgba(6, 182, 212, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        box-shadow: 0 0 45px rgba(6, 182, 212, 0.45), var(--glass-shadow);
+    }
+}
+
 .profile-container {
     max-width: 380px;
     margin: 0 auto;
     padding: 12px;
     box-shadow: 0 0 35px rgba(6, 182, 212, 0.4), var(--glass-shadow);
     transition: var(--transition);
+
+    /* Entrance: hidden initially, reveal after 1s */
+    opacity: 0;
+    animation: profileReveal 0.75s cubic-bezier(0.22, 1, 0.36, 1) 1s forwards;
 }
 [data-theme="dark"] .profile-container {
     box-shadow: 0 0 45px rgba(20, 184, 166, 0.3), var(--glass-shadow);
@@ -431,6 +450,22 @@ section {
     box-shadow: 0 0 50px rgba(6, 182, 212, 0.6), 0 12px 40px 0 rgba(6, 182, 212, 0.15);
     transform: translateY(-5px);
 }
+
+/* Floating icons: reveal slightly after the photo */
+.floating-icon {
+    opacity: 0;
+    animation: profileReveal 0.6s cubic-bezier(0.22, 1, 0.36, 1) 1.5s forwards;
+}
+
+/* Respect user's reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .profile-container,
+    .floating-icon {
+        opacity: 1;
+        animation: none;
+    }
+}
+
 .profile-img {
     width: 100%;
     height: auto;
