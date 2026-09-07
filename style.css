@@ -531,8 +531,9 @@ section {
     text-align: center;
     color: var(--text-light);
     font-size: 0.95rem;
-    margin-top: -1.5rem;
+    margin-top: 0.6rem;
     margin-bottom: 0;
+    line-height: 1.5;
 }
 
 /* Loading State */
