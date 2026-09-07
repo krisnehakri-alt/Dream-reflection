@@ -297,15 +297,15 @@ section {
     position: absolute;
     color: var(--primary-color);
     font-family: 'Courier New', Courier, monospace;
-    opacity: 0.08;
-    filter: blur(3px);
+    opacity: 0.10;
+    filter: blur(1.5px);
     font-weight: bold;
     white-space: nowrap;
     animation: floatCode 10s ease-in-out infinite;
 }
 
 [data-theme="dark"] .code-elem {
-    opacity: 0.12;
+    opacity: 0.15;
 }
 
 @keyframes floatCode {
@@ -314,13 +314,13 @@ section {
 }
 
 .code-1 { top: 15%; left: 5%; font-size: 5rem; animation-duration: 12s; }
-.code-2 { top: 65%; left: 2%; font-size: 8rem; animation-duration: 15s; color: var(--secondary-color); filter: blur(5px); }
+.code-2 { top: 65%; left: 2%; font-size: 8rem; animation-duration: 15s; color: var(--secondary-color); filter: blur(3px); }
 .code-3 { top: 25%; right: 10%; font-size: 2rem; animation-duration: 14s; }
 .code-4 { bottom: 15%; right: 5%; font-size: 1.8rem; animation-duration: 11s; }
-.code-5 { top: 50%; left: 35%; font-size: 1.5rem; animation-duration: 13s; filter: blur(2px); }
+.code-5 { top: 50%; left: 35%; font-size: 1.5rem; animation-duration: 13s; filter: blur(1px); }
 .code-6 { top: 10%; left: 45%; font-size: 2.5rem; color: var(--secondary-color); animation-duration: 16s; }
 .code-7 { top: 75%; right: 25%; font-size: 1.5rem; animation-duration: 10s; }
-.code-8 { top: 80%; left: 30%; font-size: 4rem; animation-duration: 17s; color: var(--secondary-color); filter: blur(4px); }
+.code-8 { top: 80%; left: 30%; font-size: 4rem; animation-duration: 17s; color: var(--secondary-color); filter: blur(2px); }
 .code-9 { bottom: 5%; left: 15%; font-size: 2.2rem; animation-duration: 12s; }
 .hero-content {
     flex: 1;
